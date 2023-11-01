@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Z-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Índice</title>
+</head>
+
+<body>
+    <header>
+        <div class="cabecera">
+            <h1>Galería de Proyectos</h1>
+            <h2>Proyectos FrontEnd</h2>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div style="width: 100%;">
+                <!-- Contenedor para cargar los archivos HTML -->
+                <iframe id="iframeContainer" src="file:///C:/Users/usuario/Desktop/Asepur/50-projects-50-days/1-expanding-cards/index.html" frameborder="0" width="100%" height="400px"></iframe>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="nav-btn">
+        <!-- Botón para cargar el ejercicio 1 -->
+        <button class="btn" onclick="cargarEjercicio('file:///C:/Users/usuario/Desktop/Asepur/50-projects-50-days/1-expanding-cards/index.html')">Expanding Cards</button>
+        <!-- Botón para cargar el ejercicio 2 -->
+        <button class="btn" onclick="cargarEjercicio('file:///C:/Users/usuario/Desktop/Asepur/50-projects-50-days/2-next-step/index.html')">Progress Steps</button>
+        <button class="btn" onclick="cargarEjercicio('file:///C:/Users/usuario/Desktop/Asepur/50-projects-50-days/3-hidden-search/index.html')">Hidden Search</button>
+        <button class="btn" onclick="cargarEjercicio('file:///C:/Users/usuario/Desktop/Asepur/50-projects-50-days/4-form-wave/index.html')">Form Wave</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function cargarEjercicio(url) {
+            document.getElementById('iframeContainer').src = url;
+        }
+    </script>
+</body>
+</html>

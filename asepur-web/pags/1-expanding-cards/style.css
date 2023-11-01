@@ -1,0 +1,38 @@
+
+body{
+    background-color: #fff;
+    height: 100vh;
+    font-family: 'Montserrat';
+}
+
+.cabecera{
+    text-align: center;
+}
+.projects-container{
+    display: flex;
+    height: 90vh;
+}
+.panel{
+    flex: 0.5;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    transition: flex 0.7s ease-in;
+    margin: 10px;
+}
+.panel.active{
+    flex: 5;
+}
+
+.panel h3{
+    color: #fff;
+    position: absolute;
+    font-family: sans-serif;
+    bottom: 20px;
+    left: 20px;
+    font-size: 24px;
+}
